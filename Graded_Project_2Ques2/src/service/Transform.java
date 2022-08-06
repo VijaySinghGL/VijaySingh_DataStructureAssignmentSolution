@@ -27,11 +27,12 @@ public class Transform {
 		}
 		public void convertTree(Node root)
 		{
-			if (root == null)
+	            
+		     if (root == null)
 				return;
 			convertTree(root.left);
 			Node tempRight  = root.right;
-			if (headNode == null)
+		    if (headNode == null)
 		    {
 		        headNode = root;
 		        root.left = null;
